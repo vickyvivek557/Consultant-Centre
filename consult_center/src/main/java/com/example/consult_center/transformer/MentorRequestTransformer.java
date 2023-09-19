@@ -24,4 +24,13 @@ public class MentorRequestTransformer {
                 .message("Your request submitted successfully.")
                 .build();
     }
+
+    public static Mentor MentorReqToMentor(MentorRequest mentorRequest){
+        return Mentor.builder()
+                .name(mentorRequest.getName())
+                .email(mentorRequest.getEmail())
+                .age(mentorRequest.getAge())
+                .gender(mentorRequest.getGender())
+                .build();
+    }
 }

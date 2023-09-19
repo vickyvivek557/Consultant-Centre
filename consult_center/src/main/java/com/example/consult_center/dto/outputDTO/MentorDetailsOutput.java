@@ -1,8 +1,10 @@
-package com.example.consult_center.model;
+package com.example.consult_center.dto.outputDTO;
 
 import com.example.consult_center.Enum.Gender;
 import com.example.consult_center.Enum.JobRole;
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
@@ -11,26 +13,18 @@ import lombok.experimental.FieldDefaults;
 @AllArgsConstructor
 @Getter
 @Setter
-@Entity
 @Builder
-public class Mentor {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    int mentorId;
-
+public class MentorDetailsOutput {
     String name;
 
-    @Column(unique = true, nullable = false)
     String email;
 
     int age;
 
-    @Enumerated(EnumType.STRING)
     Gender gender;
 
     String phoneNO;
 
-    @Enumerated(EnumType.STRING)
     JobRole jobRole;
 
     String cv;
