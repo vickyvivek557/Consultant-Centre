@@ -13,6 +13,7 @@ import lombok.experimental.FieldDefaults;
 @Setter
 @Entity
 @Builder
+@Table(name = "mentor_requests")
 public class MentorRequest {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

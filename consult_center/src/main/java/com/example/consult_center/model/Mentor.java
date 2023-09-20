@@ -6,13 +6,17 @@ import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
-@Entity
 @Builder
+@Entity
+@Table(name = "mentor_info")
 public class Mentor {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -34,4 +38,11 @@ public class Mentor {
     JobRole jobRole;
 
     String cv;
+
+    @OneToMany(mappedBy = "mentor", cascade = CascadeType.ALL)
+    List<ClientEntity> clients = new ArrayList<>();
+
+    @OneToMany(mappedBy = "mentor", cascade = CascadeType.ALL)
+    List<SessionEntity> sessions = new ArrayList<>();
+
 }
