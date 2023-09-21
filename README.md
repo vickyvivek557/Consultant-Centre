@@ -6,7 +6,7 @@
 
 # Service Interfaces
 
-public interface ClientService {
+1  public interface ClientService {
 
     public ClientOutput registerClient(ClientInput clientInput);
 
