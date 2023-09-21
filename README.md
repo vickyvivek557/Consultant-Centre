@@ -37,14 +37,14 @@ GET:- http://localhost:8080/admin/get_all_mentors
 # Schemas
 
 
-MentorRequestInput
-{
-name	string
-email	string
-age	integer
-gender	string
-Enum:
-[ MALE, FEMALE, OTHER ]
+MentorRequestInput  
+{  
+  name	string
+  email	string
+  age	integer
+  gender	string
+  Enum:
+  [ MALE, FEMALE, OTHER ]  
 }
 
 
