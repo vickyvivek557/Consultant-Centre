@@ -26,6 +26,17 @@
     public StatisticsClass getStatistics();
 }
 
+public interface MentorRequestService {
+
+    public MentorRequestOutput addMentorRequest(MentorRequestInput mentorRequestInput);
+
+    public List<MentorRequest> getAllCunsultantReq();
+
+    public MentorRequest rejectRequest(int requestId);
+
+    public Mentor approveRequest(int id);
+}
+
 
 # mentor-req-controller
 
