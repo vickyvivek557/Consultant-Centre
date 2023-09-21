@@ -38,19 +38,19 @@ public interface MentorRequestService {
 }
 
 
-# mentor-req-controller
+# mentor-req-controller-APIs
 
 
 POST:- http://localhost:8080/mentor_request/add
 
-# client-controller
+# client-controller-APTs
 
 
 POST:- http://localhost:8080/client/register
 
 POST:- http://localhost:8080/client/book_session/mentor_id/{mentorId}/client_id/{clientId}
 
-# admin-controller
+# admin-controller-APTs
 
 
 PUT:- http://localhost:8080/admin/reject_mentor_request/{id}
@@ -68,10 +68,10 @@ GET:- http://localhost:8080/admin/get_mentor_by_email/{email}
 GET:- http://localhost:8080/admin/get_all_mentors
 
 
-# Schemas<br />
+# Input Schemas<br />
 
 
-MentorRequestInput  <br />
+Mentor-Request  Input  <br />
 {  <br />
   name  :-  string<br />
   email  :-  string<br />
@@ -82,7 +82,7 @@ MentorRequestInput  <br />
 }
 
 
-ClientInput<br />
+Client  Input<br />
 {<br />
     name  :-  	string<br />
     age  :- 	integer<br />
@@ -94,7 +94,7 @@ ClientInput<br />
 
 
 
-MentorDetailsInput<br />
+Mentor  Details  Input<br />
 {<br />
    phoneNO  :-  	string<br />
    jobRole  :-	 string<br />
