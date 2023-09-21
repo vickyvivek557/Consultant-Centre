@@ -6,12 +6,24 @@
 
 # Service Interfaces
 
-1  public interface ClientService {
+  public interface ClientService {
 
     public ClientOutput registerClient(ClientInput clientInput);
 
     public SessionOutput bookSession(int mentorId, int clientId);
 
+}
+
+
+  public interface MentorService {
+
+    public MentorOutput addDetailsOfMentor(int mentorId, MentorDetailsInput input);
+
+    public List<MentorOutput> getAllMentors();
+
+    public MentorOutput getMentorByEmail(String email);
+
+    public StatisticsClass getStatistics();
 }
 
 
