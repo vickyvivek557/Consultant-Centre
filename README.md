@@ -39,8 +39,8 @@ GET:- http://localhost:8080/admin/get_all_mentors
 
 MentorRequestInput  <br />
 {  <br />
-  name	string<br />
-  email	string<br />
+  name :-	string<br />
+  email	$~$ string<br />
   age	integer<br />
   gender	string<br />
   Enum:<br />
@@ -48,31 +48,23 @@ MentorRequestInput  <br />
 }
 
 
-ClientInput{<br />
-  name	string<br />
-  age	integer<br />
-  gender	string<br />
-  Enum:<br />
-  [ MALE, FEMALE, OTHER ]<br />
-  email	string<br />
+ClientInput<br />
+{<br />
+    name	string<br />
+    age	integer<br />
+    gender	string<br />
+    Enum:<br />
+    [ MALE, FEMALE, OTHER ]<br />
+    email	string<br />
   }
 
 
 
-MentorDetailsInput{
-
-
-phoneNO	string
-
-
-jobRole	string
-
-
-Enum:
-[ HR, SDE, ASDE ]
-
-
-cv	string
-
-
+MentorDetailsInput<br />
+{<br />
+   phoneNO	string
+   jobRole	string
+   Enum:
+   [ HR, SDE, ASDE ]
+   cv	string
 }
