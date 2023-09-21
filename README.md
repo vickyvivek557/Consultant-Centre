@@ -37,7 +37,8 @@ GET:- http://localhost:8080/admin/get_all_mentors
 # Schemas
 
 
-MentorRequestInput{
+MentorRequestInput
+{
 name	string
 email	string
 age	integer
