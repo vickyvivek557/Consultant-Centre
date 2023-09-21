@@ -34,34 +34,45 @@ GET:- http://localhost:8080/admin/get_mentor_by_email/{email}
 GET:- http://localhost:8080/admin/get_all_mentors
 
 
-# Schemas
+# Schemas<br />
 
 
-MentorRequestInput  
-{  
-  name	string
-  email	string
-  age	integer
-  gender	string
-  Enum:
-  [ MALE, FEMALE, OTHER ]  
+MentorRequestInput  <br />
+{  <br />
+  name	string<br />
+  email	string<br />
+  age	integer<br />
+  gender	string<br />
+  Enum:<br />
+  [ MALE, FEMALE, OTHER ]<br />  
 }
 
 
-ClientInput
-  name	string
-  age	integer
-  gender	string
-  Enum:
-  [ MALE, FEMALE, OTHER ]
-  email	string
+ClientInput{<br />
+  name	string<br />
+  age	integer<br />
+  gender	string<br />
+  Enum:<br />
+  [ MALE, FEMALE, OTHER ]<br />
+  email	string<br />
+  }
 
 
 
 MentorDetailsInput{
+
+
 phoneNO	string
+
+
 jobRole	string
+
+
 Enum:
 [ HR, SDE, ASDE ]
+
+
 cv	string
+
+
 }
