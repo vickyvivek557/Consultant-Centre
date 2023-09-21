@@ -43,14 +43,14 @@ public interface MentorRequestService {
 
 POST:- http://localhost:8080/mentor_request/add
 
-# client-controller-APTs
+# client-controller-APIs
 
 
 POST:- http://localhost:8080/client/register
 
 POST:- http://localhost:8080/client/book_session/mentor_id/{mentorId}/client_id/{clientId}
 
-# admin-controller-APTs
+# admin-controller-APIs
 
 
 PUT:- http://localhost:8080/admin/reject_mentor_request/{id}
