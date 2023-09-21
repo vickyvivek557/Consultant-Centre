@@ -4,6 +4,15 @@
 
 # Functionalities of this project is explained below
 
+#public interface ClientService {<br />
+      public   ClientOutput   registerClient  (  ClientInput   clientInput  );
+    
+
+      public SessionOutput bookSession(int mentorId, int clientId);
+
+#}
+
+
 # mentor-req-controller
 
 
