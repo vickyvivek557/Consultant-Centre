@@ -47,14 +47,14 @@ Enum:
 }
 
 
-ClientInput{
-name	string
-age	integer
-gender	string
-Enum:
-[ MALE, FEMALE, OTHER ]
-email	string
-}
+ClientInput
+  name	string
+  age	integer
+  gender	string
+  Enum:
+  [ MALE, FEMALE, OTHER ]
+  email	string
+
 
 
 MentorDetailsInput{
